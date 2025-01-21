@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "hashicorp.terraform",
+        "fredwangwang.vscode-hcl-format",
+        "wengerk.highlight-bad-chars",
+        "DavidAnson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.go",
+        "leopotam.csharpfixformat",
+        "editorconfig.editorconfig",
+        "visualstudioexptteam.vscodeintellicode"
+    ]
+}
