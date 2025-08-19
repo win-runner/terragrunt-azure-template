@@ -86,7 +86,7 @@ terragrunt run-all apply --terragrunt-non-interactive
 For running single modules, you can also run `terragrunt plan` or `terragrunt apply` directly like so
 
 ```bash
-cd env/dev/westeurope/001/resourcegroup/app
+cd env/dev/westeurope/001/resourcegroup/network
 terragrunt plan
 terragrunt apply
 ```
