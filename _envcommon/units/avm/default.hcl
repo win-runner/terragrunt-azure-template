@@ -8,7 +8,8 @@ locals {
 }
 
 terraform {
-  source = "${local.this.source}?version=${local.this.version}"
+  source  = local.this.source
+  version = local.this.version
 }
 
 inputs = {
