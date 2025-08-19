@@ -9,8 +9,8 @@ az login --tenant TENANT_ID
 az account set --subscription SUBSCRIPTION_NAME
 
 # List all blobs in the specified container and break the lease for each blob
-az storage blob list --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --query "[].name" -o tsv | while read -r blobname
-do
-    az storage blob lease break --account-name $ACCOUNT_NAME --container-name $CONTAINER_NAME --blob-name "$blobname"
+az storage blob list --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" --query "[].name" -o tsv |
+  while read -r blobname; do
+    az storage blob lease break --account-name "$ACCOUNT_NAME" --container-name "$CONTAINER_NAME" --blob-name "$blobname"
     echo "Lease broken for blob: $blobname"
-done
+  done
