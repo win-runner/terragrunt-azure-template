@@ -3,7 +3,7 @@ locals {
   tenant_id = "" # TODO: Set the tenant_id
 
   backend_vars  = read_terragrunt_config(find_in_parent_folders("backend.hcl"))
-  backend_rg    = local.backend_vars.locals.store_account_rg_name
+  backend_rg    = local.backend_vars.locals.storage_account_rg_name
   backend_sa    = local.backend_vars.locals.storage_account_name
   backend_cont  = local.backend_vars.locals.storage_container_name
   backend_subId = local.backend_vars.locals.subscription_id
